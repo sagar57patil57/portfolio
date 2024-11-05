@@ -43,16 +43,16 @@ export class DataService {
     ];
 
     applications: any[] = [
-      { id: 'File Explorer', name: 'My PC', imgSrc: 'https://img.icons8.com/?size=100&id=20420&format=png&color=000000' },
-      { id: 'Portfolio', name: 'Portfolio', imgSrc: 'https://img.icons8.com/?size=100&id=ognMDWHTIaDL&format=png&color=000000', displayInFooter: true },
-      { id: 'Resume', name: ' Resume', imgSrc: 'https://img.icons8.com/?size=100&id=9eK5RgdglDbA&format=png&color=000000g', displayInFooter: true },
-      { id: 'Terminal', name: 'Terminal', imgSrc: 'https://img.icons8.com/?size=100&id=nuPce-GYYZeC&format=png&color=000000', displayInFooter: true },
-      { id: 'Linkedin', name: 'LinkedIn', imgSrc: 'https://img.icons8.com/?size=100&id=13930&format=png&color=000000', link: 'https://www.linkedin.com/in/sagar-patil-57srp/' },
-      { id: 'Chrome', name: 'Chrome', imgSrc: 'https://img.icons8.com/?size=100&id=63785&format=png&color=000000' },
-      { id: 'Settings', name: 'Settings', imgSrc: 'https://img.icons8.com/?size=100&id=flyFkP7sj07V&format=png&color=000000' },
-      { id: 'Compiler', name: 'Compiler', imgSrc: 'https://img.icons8.com/?size=100&id=1ZSHk8m9bk4p&format=png&color=000000', displayInFooter: true },
-      { id: 'Calculator', name: 'Calculator', imgSrc: 'https://img.icons8.com/?size=100&id=12780&format=png&color=000000' },
-      { id: 'Camera', name: 'Camera', imgSrc: 'https://img.icons8.com/?size=100&id=xZiTPdO57ltQ&format=png&color=000000', displayInFooter: true }
+      // { id: 'File Explorer', name: 'My PC', imgSrc: 'https://img.icons8.com/?size=100&id=20420&format=png&color=000000' },
+      { id: 'Portfolio', name: 'Portfolio', imgSrc: 'assets/images/portfolio.png', displayInFooter: true },
+      { id: 'Resume', name: ' Resume', imgSrc: 'assets/images/resume.png', displayInFooter: true },
+      { id: 'Terminal', name: 'Terminal', imgSrc: 'assets/images/terminal.png', displayInFooter: true },
+      { id: 'Linkedin', name: 'LinkedIn', imgSrc: 'assets/images/linkedin.png', link: 'https://www.linkedin.com/in/sagar-patil-57srp/' },
+      { id: 'Chrome', name: 'Chrome', imgSrc: 'assets/images/chrome.png' },
+      { id: 'Settings', name: 'Settings', imgSrc: 'assets/images/settings.png' },
+      { id: 'Camera', name: 'Camera', imgSrc: 'assets/images/camera.png', displayInFooter: true },
+      { id: 'Compiler', name: 'Compiler', imgSrc: 'assets/images/compiler.png', displayInFooter: true },
+      { id: 'Calculator', name: 'Calculator', imgSrc: 'assets/images/calc.png' }
     ]
 
     skills: any = {

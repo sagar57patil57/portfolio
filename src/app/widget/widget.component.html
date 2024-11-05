@@ -1,6 +1,5 @@
 <ng-container>
-    <img [src]="imgSrc" [alt]="name" class="mx-auto hover:bg-gray-200 transition-all transform hover:scale-95 hover:shadow-2xl cursor-pointer"
-        [ngClass]="{ 'w-16 h-16': !isMobile, 'w-12 h-12': isMobile }"
+    <img [src]="imgSrc" [alt]="name" class="mx-auto hover:bg-gray-200 transition-all transform hover:scale-95 hover:shadow-2xl cursor-pointer w-12"
     >
-    <p [ngClass]="{'text-md text-white': !isMobile, 'text-sm text-gray-600': isMobile}" class="mt-2">{{ name }}</p>
+    <p [ngClass]="{'text-white': !isMobile, 'text-gray-600': isMobile}" class="mt-2 text-sm">{{ name }}</p>
 </ng-container>
