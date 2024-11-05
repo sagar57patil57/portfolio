@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, QueryList, ViewChildren } from '@angular/core';
 import { ModalComponent } from './shared/modal/modal.component';
+import { UtilService } from './services/util.service';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,11 @@ import { ModalComponent } from './shared/modal/modal.component';
 })
 export class AppComponent {
   showSplash = true;
+  isMobile: boolean;
   constructor(
-    
+    private utilService: UtilService
   ) {
-
+    this.isMobile = this.utilService.isMobile();
   }
   @ViewChildren(ModalComponent) modalComponents!: QueryList<ModalComponent>;
   
@@ -31,6 +33,6 @@ export class AppComponent {
     // Hide the splash screen after 3 seconds (or whatever duration)
     setTimeout(() => {
       this.showSplash = false;
-    }, 0);
+    }, 2000);
   }
 }

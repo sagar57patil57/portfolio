@@ -2,7 +2,7 @@
 <div *ngIf="!showSplash" class="flex flex-col min-h-screen relative">
   <app-navbar></app-navbar>
   <app-container class="flex-grow" (onModalSelected)="openModal($event)"></app-container>
-  <app-footer class="fixed bottom-0 left-0 w-full z-[1100]" (onModalSelected)="openModal($event)"></app-footer>
+  <app-footer *ngIf="!isMobile" class="fixed bottom-0 left-0 w-full z-[1100]" (onModalSelected)="openModal($event)"></app-footer>
   <app-modal modalId="File Explorer">
     <app-file-explorer></app-file-explorer>
   </app-modal>

@@ -5,7 +5,7 @@
         
     <!-- Start and Stop camera buttons -->
     <div class="camera-controls text-xs sm:text-sm" *ngIf="!showGallery">
-      <button class="start-camera-button px-2 py-1" (click)="startCamera()" *ngIf="!stream">Start Camera</button>
+      <button class="start-camera-button px-4 py-2" (click)="startCamera()" *ngIf="!stream">Click to access camera</button>
       <button class="stop-camera-button" (click)="stopCamera()" *ngIf="stream">Stop </button>
       <button class="switch-camera-button" (click)="switchCamera()" *ngIf="stream">Switch</button>
       <button class="switch-camera-button" (click)="openGallery()" *ngIf="stream">Gallery</button>

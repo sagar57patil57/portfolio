@@ -1,7 +1,6 @@
 .terminal-container {
     min-height: 400px;
     width: 100%; /* Full width */
-    max-height: calc(100vh - 80px);
     border-radius: 0;
   }
   

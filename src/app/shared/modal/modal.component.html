@@ -6,12 +6,13 @@
     'w-full h-full': isFullScreen || isMobile,
     'top-0 left-0': isFullScreen || isMobile,
     'w-[100vw] h-[100vh]': isFullScreen || isMobile,
+    'overflow-auto': isMobile
   }"
   [ngStyle]="{
     zIndex: modalService.getZIndex(modalId),
     top: top,
     left: left,
-    height: isFullScreen || isMobile ? 'calc(100vh - 80px)' : '40vh',
+    height: isFullScreen || isMobile ? 'calc(100vh)' : '40vh',
   }"
   *ngIf="isOpen"
   (mousedown)="onMouseDown($event)"
@@ -35,7 +36,7 @@
         'w-[50vw] h-[40vh]': !isFullScreen && !isMobile,
     }"
     [ngStyle]="{
-        height: isFullScreen || isMobile ? 'calc(-120px + 100vh)' : '40vh',
+        height: isFullScreen || isMobile ? 'calc(0px + 100vh)' : '40vh',
     }"
   >
     <ng-content></ng-content>

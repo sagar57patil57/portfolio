@@ -13,7 +13,7 @@
 body {
   @apply h-screen bg-cover bg-center bg-no-repeat;
   @apply font-poppins;
-  background-image: url('/assets/images/desktop-bg.jpg');
+  background-image: url('/assets/images/desktop-bg-1.jpg');
 }
 
 html, body {
@@ -32,5 +32,5 @@ html, body {
 }
 
 .bg-default {
-  background-image: url('/assets/images/desktop-bg.jpg');
+  background-image: url('/assets/images/desktop-bg-1.jpg');
 }
