@@ -1,0 +1,119 @@
+{
+  "configVersion": 1,
+  "timestamp": 1730794338624,
+  "index": "https://github.com/sagar57patil57.github.io/portfolio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://github.com/sagar57patil57.github.io/portfolio/chunk-ALIQTIYY.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/chunk-BMBYILCS.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/chunk-L2HEV66R.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/chunk-NYZOWURK.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/index.html",
+        "https://github.com/sagar57patil57.github.io/portfolio/main-WDHLBCQ5.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/polyfills-FFHMD2TL.js",
+        "https://github.com/sagar57patil57.github.io/portfolio/styles-KRRPZLVJ.css",
+        "https://github.com/sagar57patil57.github.io/portfolio/worker-FI5FP5AE.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-128x128.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-144x144.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-152x152.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-192x192.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-384x384.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-512x512.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-72x72.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-96x96.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/calc.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/camera.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/chrome.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/compiler.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/desktop-bg.jpg",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/linkedin.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/me.jpeg",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mobile-bg.jpg",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/my_pc.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mypc-48.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mypc-96.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/portfolio.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/resume.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/serrala-icon.svg",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/settings.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/terminal.png",
+        "https://github.com/sagar57patil57.github.io/portfolio/assets/images/udchalo-icon.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/calc.png": "907660bcfbf7710a5326b40158575a75e66c8f6a",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/camera.png": "3efba124404bc52615a6af854a62a502c1214bd9",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/chrome.png": "1e21e73aa1bd030145dad4f42229c4f3b1c9e882",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/compiler.png": "c9075c4c67fbcefa3650efed80afcd8d134be01d",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/desktop-bg.jpg": "d2bb8d675721d7366a5e0bf5cac584e951304982",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/linkedin.png": "0c9295cfc852402377f5a8bf6a051aea92089e9a",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/me.jpeg": "a0ea20a3b2dc1770213cdc2041391940648c73de",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mobile-bg.jpg": "f2e359d6d998c5a29624db79a35dd65b69696a74",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/my_pc.png": "c1caec533f82929b9ea7e72fb9a56eab1e3a1b5c",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mypc-48.png": "0ac81185509bb8bb82ae4076d6fab33c21e879d2",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/mypc-96.png": "ffd3327374f89ab89dff7601eabbd569ba3c2de5",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/portfolio.png": "7579cbcd19ace82940b1d8be263eb551ebc6aef0",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/resume.png": "60348bf4714b8eafa81ee96de3040b9eb4f9fddc",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/serrala-icon.svg": "4a1d43d9ebb2f5949888ac55c2f9286c713b2bea",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/settings.png": "6c1df7e95cdb7d44bd6a9d6e4a45bb2048bed6a9",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/terminal.png": "ee096a2cee8e30d6b313d8fab35003d7f860c6e4",
+    "https://github.com/sagar57patil57.github.io/portfolio/assets/images/udchalo-icon.png": "eeb6bb5c49e6d8cbb0adf32bb3bb70579a878dd9",
+    "https://github.com/sagar57patil57.github.io/portfolio/chunk-ALIQTIYY.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://github.com/sagar57patil57.github.io/portfolio/chunk-BMBYILCS.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://github.com/sagar57patil57.github.io/portfolio/chunk-L2HEV66R.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://github.com/sagar57patil57.github.io/portfolio/chunk-NYZOWURK.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://github.com/sagar57patil57.github.io/portfolio/index.html": "bb5f703f32da8a94d00c10bab6118ecf7658ced8",
+    "https://github.com/sagar57patil57.github.io/portfolio/main-WDHLBCQ5.js": "ec435150efaf1495b6103a18d1ba23d6fd024ed9",
+    "https://github.com/sagar57patil57.github.io/portfolio/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "https://github.com/sagar57patil57.github.io/portfolio/styles-KRRPZLVJ.css": "ceccee88e3ec806d2a806310e2411cea2d4a6bd8",
+    "https://github.com/sagar57patil57.github.io/portfolio/worker-FI5FP5AE.js": "03c88cb3ae89f36150004f7da3f94831a62cd5ec"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
