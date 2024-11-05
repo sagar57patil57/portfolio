@@ -1,0 +1,75 @@
+<div class="settings-component p-6 rounded-lg max-w-lg mx-auto mt-8">
+    <!-- Change Background Section -->
+    <div class="mb-6">
+      <h3 class="text-lg font-semibold mb-2">Change Background</h3>
+      <div class="flex gap-4">
+        <span
+          *ngFor="let option of backgroundOptions"
+          class="bg-gray-200 hover:bg-gray-300 p-2 rounded w-10 h-10 cursor-pointer"
+          (click)="setBackgroundColor(option)"
+          [ngStyle]="{'background-color': option.start}"
+        >
+      </span>
+      </div>
+    
+      <button
+        class="mt-4 bg-blue-500 hover:bg-blue-600 text-white p-2 rounded"
+        (click)="resetToDefault()"
+      >
+        Select Default
+      </button>
+    </div>
+  
+    <!-- Brightness Control Section -->
+    <div class="mb-6">
+      <h3 class="text-lg font-semibold mb-2">Adjust Brightness</h3>
+      <input type="range" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer" min="0" max="100" step="1" [(ngModel)]="brightness" (input)="adjustBrightness()">
+    </div>
+
+    <div class="mt-4">
+        <h3 class="text-lg font-semibold">Custom Cursor</h3>
+        <select [(ngModel)]="customCursor" (change)="setCustomCursor(customCursor)" class="border p-2 rounded">
+          <option value="default">Default</option>
+          <option value="pointer">Pointer</option>
+          <option value="crosshair">Crosshair</option>
+          <option value="move">Move</option>
+          <option value="text">Text</option>
+          <option value="wait">Wait</option>
+          <option value="help">Help</option>
+          <option value="none">None</option>
+          <option value="url('/assets/images/custom-cursor.png'), auto">Custom Image</option>
+        </select>
+      </div>
+
+      <!-- <div class="mt-4">
+        <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" [(ngModel)]="isChecked" (change)="onCheckboxChange()">
+            <span class="ml-2 text-gray-700" *ngIf="isChecked">Sound is on</span>
+            <span class="ml-2 text-gray-700" *ngIf="!isChecked">Sound is off</span>
+        </label>
+        </div> -->
+   
+    <div class="flex items-center space-x-4">
+        <label class="flex items-center">
+            <input type="radio" name="audioOption" value="none" (change)="selectAudioOption('none')" class="mr-2" [(ngModel)]="selectedAudioOption">
+            <span class="text-black">No sound</span>
+        </label>
+        
+        <label class="flex items-center">
+            <input type="radio" name="audioOption" value="option2" (change)="selectAudioOption('option2')" class="mr-2" [(ngModel)]="selectedAudioOption">
+            <span class="text-black">Retro</span>
+        </label>
+        
+        <label class="flex items-center">
+            <input type="radio" name="audioOption" value="option3" (change)="selectAudioOption('option3')" class="mr-2" [(ngModel)]="selectedAudioOption">
+            <span class="text-black">Modern</span>
+        </label>
+    </div>
+
+      <div class="mt-10">
+        <button (click)="resetSettings()" class="bg-red-500 text-white p-2 rounded">
+          Reset Settings
+        </button>
+      </div>
+  </div>
+  

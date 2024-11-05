@@ -1,0 +1,14 @@
+<div class="w-full flex justify-center shadow-md h-20">
+  <div class="py-3 px-4 bg-slate-700 text-white mx-7 mb-2 mt-0 rounded-[30px] bg-opacity-50 flex items-center justify-center shadow-md">
+    <div class="flex space-x-7 items-center justify-center">
+      <ng-container *ngFor="let modal of modals">
+        <img
+          [src]="modal.imgSrc"
+          alt="Icon"
+          class="h-8 w-8 md:h-10 md:w-10 cursor-pointer duration-300 ease-in-out hover:scale-150 "
+          (click)="openModal(modal.id)"
+        />
+      </ng-container>
+    </div>
+  </div>
+</div>

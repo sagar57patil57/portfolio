@@ -1,0 +1,27 @@
+<div class="calendar-container p-6 max-w-lg mx-auto bg-white rounded-lg shadow-lg">
+    <!-- Header with month navigation -->
+    <div class="calendar-header flex justify-between items-center mb-4">
+      <button (click)="previousMonth()" class="transition transform hover:scale-110 duration-300 text-gray-600">
+        &lt;
+      </button>
+      <h2 class="text-2xl font-bold text-gray-700">{{ monthNames[currentMonth] }} {{ currentYear }}</h2>
+      <button (click)="nextMonth()" class="transition transform hover:scale-110 duration-300 text-gray-600">
+        &gt;
+      </button>
+    </div>
+  
+    <!-- Days of the week -->
+    <div class="grid grid-cols-7 gap-2 text-center text-gray-500">
+      <div *ngFor="let day of weekDays" class="uppercase font-medium">{{ day }}</div>
+    </div>
+  
+    <!-- Days in the month -->
+    <div class="grid grid-cols-7 gap-2 text-center">
+      <div *ngFor="let day of getDaysInMonth()" (click)="selectDate(day)" 
+        class="p-4 rounded-lg hover:bg-indigo-200 hover:text-indigo-900 transition duration-300 
+        cursor-pointer {{ day === selectedDate ? 'bg-indigo-500 text-white' : 'bg-gray-100' }}">
+        {{ day }}
+      </div>
+    </div>
+  </div>
+  

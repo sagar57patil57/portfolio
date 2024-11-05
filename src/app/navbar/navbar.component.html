@@ -1,0 +1,55 @@
+<nav class="flex items-center justify-between py-2 bg-gradient-to-br from-slate-700 to-slate-600 text-white shadow-xl"
+[ngClass]="{ 'px-6 h-12': !isMobile, 'px-2 h-8': isMobile }"
+>
+  <div class="flex items-center relative">
+    <img 
+      src="https://img.icons8.com/ios-filled/50/FFFFFF/grid.png" 
+      alt="Icon" 
+      class="h-6 w-6 cursor-pointer hover:opacity-50" 
+      *ngIf="!isMobile"
+    >
+    <span *ngIf="isMobile" class="text-xs">{{ currentDate | date: 'h:mm a' }}</span>
+    <div *ngIf="isPopoverOpen" 
+         [ngStyle]="{'top.px': buttonPosition.top + 10, 'left.px': buttonPosition.left-100}" 
+         [ngClass]="{ 'w-[420px]': context === 'clock'
+          }"
+         class="popover absolute bg-white border shadow-lg rounded-lg z-10 text-black cursor-pointer">
+     
+      <ng-container *ngIf="context === 'battery'">
+        <div class="w-40 flex p-4">
+          Battery: <h3><b class="text-gray-300 ml-4 font-mono">72%</b></h3>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="context === 'wifi'">
+        <div class="w-40 p-4">
+          <ng-container *ngFor="let data of wifiData; let i = index">
+            <div class="flex gap-3 items-center" (click)="updateWifiStatus(i)">
+              <img src="https://img.icons8.com/?size=100&id=13047&format=png&color=000000" alt="wifi" class="w-5 h-5">
+              <div class="flex-grow">
+                <span class="font-semibold">{{ data.name }}</span>
+                <p class="text-sm text-gray-500">{{ data.status }}</p>
+              </div>
+            </div>
+            <hr class="py-1">
+          </ng-container>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="context === 'clock'">
+        <div class="w-100 h-100">
+          <app-calendar></app-calendar>
+        </div>
+      </ng-container>
+
+    </div>
+  </div>
+  <div>
+    <span class="cursor-pointer" *ngIf="!isMobile" (click)="togglePopover($event, 'clock')">{{ currentDate | date:'fullDate' }}</span>
+    <!-- <span *ngIf="isMobile" class="w-1 h-1">{{ currentDate | date: 'h:mm a' }}</span> -->
+  </div>
+  <div class="flex space-x-4">
+    <img [ngClass]="{ 'h-6 w-6': !isMobile, 'h-4 w-4 ml-0': isMobile  }" src="https://img.icons8.com/?size=100&id=Zxfs4e59WGWK&format=png&color=FFFFFF" alt="Icon1" class="h-6 w-6 hover:opacity-50 cursor-pointer" (click)="togglePopover($event, 'wifi')">
+    <img [ngClass]="{ 'h-6 w-6': !isMobile, 'h-4 w-4 ml-0': isMobile  }" src="https://img.icons8.com/?size=100&id=2851&format=png&color=FFFFFF" alt="Icon2" class="h-6 w-6 hover:opacity-50 cursor-pointer" (click)="togglePopover($event, 'battery')">
+    <!-- <img [ngClass]="{ 'h-6 w-6': !isMobile, 'h-4 w-4 ml-0': isMobile  }" src="https://img.icons8.com/?size=100&id=klCwCA1xuCVe&format=png&color=FFFFFF" alt="Icon3" class="h-6 w-6 hover:opacity-50 cursor-pointer" (click)="togglePopover($event, 'mail')"> -->
+    <img [ngClass]="{ 'h-6 w-6': !isMobile, 'h-4 w-4 ml-0': isMobile  }" src="https://img.icons8.com/?size=100&id=84025&format=png&color=FFFFFF" alt="Icon4" class="h-6 w-6 hover:opacity-50 cursor-pointer" (click)="showNotifications()">
+  </div>
+</nav>

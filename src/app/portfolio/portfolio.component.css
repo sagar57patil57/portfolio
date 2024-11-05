@@ -1,0 +1,76 @@
+/* Custom Animations */
+@keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 3s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  /* Parallax Effect */
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Bezier Curve for Hero Section */
+  .custom-shape-divider-bottom-hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-hero svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .animated-hello-image {
+    animation: rotateImage 3s ease-in-out infinite;
+  }
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);  /* Start at 0 degrees */
+    }
+    25% {
+      transform: rotate(10deg); /* Rotate to 10 degrees */
+    }
+    50% {
+      transform: rotate(0deg);  /* Back to 0 degrees */
+    }
+    75% {
+      transform: rotate(-10deg); /* Rotate to -10 degrees */
+    }
+    100% {
+      transform: rotate(0deg);  /* Back to 0 degrees */
+    }
+  }

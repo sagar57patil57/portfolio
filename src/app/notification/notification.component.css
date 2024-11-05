@@ -1,0 +1,59 @@
+.fixed {
+    position: fixed;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .p-5 {
+    padding: 1.25rem;
+  }
+  
+  .space-y-2 {
+    margin-bottom: 0.5rem; /* Vertical space between notifications */
+  }
+  
+  .w-64 {
+    width: 16rem;
+  }
+  
+  .p-3 {
+    padding: 0.75rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .bg-green-500 {
+    background-color: #48bb78;
+  }
+  
+  .bg-red-500 {
+    background-color: #f56565;
+  }
+  
+  .bg-blue-500 {
+    background-color: #4299e1;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }

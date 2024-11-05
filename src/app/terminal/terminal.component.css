@@ -1,0 +1,60 @@
+.terminal-container {
+    min-height: 400px;
+    width: 100%; /* Full width */
+    max-height: calc(100vh - 80px);
+    border-radius: 0;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .blink {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .terminal-text {
+    color: #00ff00; /* Terminal green color */
+    font-family: monospace; /* Terminal-like font */
+    font-size: 24px;
+    opacity: 0; /* Initially invisible for animation */
+    border-right: 2px solid #00ff00; /* Blinking caret effect */
+    display: inline-block;
+    animation: typeEffect 2s steps(7) forwards, blinkCaret 0.75s step-end infinite;
+  }
+  
+  /* Typing effect animation */
+  @keyframes typeEffect {
+    from {
+      width: 0;
+      opacity: 1;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  /* Blinking caret animation */
+  @keyframes blinkCaret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Hover effect with glow */
+  .terminal-text:hover {
+    color: #00ff00;
+    text-shadow: 0px 0px 10px #00ff00; /* Glowing effect */
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  

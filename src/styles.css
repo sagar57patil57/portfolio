@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import '~codemirror/lib/codemirror';
+@import '~codemirror/theme/material'; */
+/* @import '~codemirror/lib/codemirror.css';
+@import '~codemirror/theme/idea.css';
+@import '~codemirror/addon/fold/foldgutter.css';
+@import '~codemirror/addon/lint/lint.css'; */
+
+body {
+  @apply h-screen bg-cover bg-center bg-no-repeat;
+  @apply font-poppins;
+  background-image: url('/assets/images/desktop-bg.jpg');
+}
+
+html, body {
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    background-image: url('/assets/images/mobile-bg.jpg');
+  }
+}
+
+.bg-custom-gradient {
+  background-image: linear-gradient(to right, var(--bg-color-start), var(--bg-color-end));
+}
+
+.bg-default {
+  background-image: url('/assets/images/desktop-bg.jpg');
+}

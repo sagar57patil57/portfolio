@@ -1,0 +1,22 @@
+.calendar-container {
+    background: linear-gradient(to right, #f7fafc, #edf2f7);
+  }
+  
+  .calendar-header {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes scaleIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .grid-cols-7 > div {
+    animation: scaleIn 0.3s ease;
+  }
+  

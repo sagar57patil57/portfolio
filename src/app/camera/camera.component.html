@@ -1,0 +1,37 @@
+<div class="camera-container">
+    <button *ngIf="showGallery" (click)="showGallery=false;" class="fixed bg-red-300 text-xs sm:text-sm right-1 top-1 z-10 rounded-sm p-1">
+        Back to camera
+    </button>
+        
+    <!-- Start and Stop camera buttons -->
+    <div class="camera-controls text-xs sm:text-sm" *ngIf="!showGallery">
+      <button class="start-camera-button px-2 py-1" (click)="startCamera()" *ngIf="!stream">Start Camera</button>
+      <button class="stop-camera-button" (click)="stopCamera()" *ngIf="stream">Stop </button>
+      <button class="switch-camera-button" (click)="switchCamera()" *ngIf="stream">Switch</button>
+      <button class="switch-camera-button" (click)="openGallery()" *ngIf="stream">Gallery</button>
+    </div>
+  
+    <video #videoElement class="camera-view" autoplay playsinline></video>
+  
+    <!-- Fullscreen photo preview -->
+    <div *ngIf="photo" class="photo-preview" (click)="closePreview()">
+      <img [src]="photo" class="photo-fullscreen" />
+      <button class="save-photo-button" (click)="savePhoto()">Save Photo</button>
+    </div>
+
+    <div *ngIf="showGallery" class="gallery">
+        <ng-container *ngIf="gallery && gallery.length">
+            <div *ngFor="let pic of gallery" class="">
+                <img [src]="pic" class="" />
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="!gallery || !gallery.length">
+            <p class="text-center text-gray-500">No photos to display.</p>
+        </ng-container>
+    </div>
+  
+    <!-- Floating red button to take a photo -->
+    <button *ngIf="showCapture && !showGallery" class="capture-button" (click)="capturePhoto()"></button>
+  </div>
+  

@@ -1,0 +1,59 @@
+<div class="mx-auto p-6 bg-gray-900 rounded-lg shadow-lg h-screen flex flex-col">
+  <!-- Header Section with Title and Run/Clear Buttons -->
+  <div class="flex justify-between items-center mb-4">
+    <h1 class="text-xl font-semibold text-white">JS Code Editor</h1>
+    <div class="flex gap-2">
+      <button 
+        (click)="userCode=''; error=null; logs=[]" 
+        class="text-xs bg-gray-600 hover:bg-gray-500 text-white font-semibold px-3 py-1 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-400">
+        Clear
+      </button>
+      <button 
+        (click)="executeCode()" 
+        class="text-xs bg-blue-600 hover:bg-blue-500 text-white font-semibold px-3 py-1 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        
+        <svg class="inline-block ml-1 w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v18l15-9-15-9z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Editor and Output Wrapper -->
+  <div class="relative flex-1 overflow-hidden flex">
+    <!-- Line Numbers Section -->
+    <!-- <div class="bg-gray-800 text-gray-400 text-sm p-4">
+      <div *ngFor="let line of getLineNumbers(userCode)" class="leading-6">{{ line }}</div>
+    </div> -->
+
+    <!-- Textarea Code Editor Section -->
+    <textarea
+      [(ngModel)]="userCode"
+      (input)="adjustTextareaHeight($event)"
+      class="flex-1 h-full text-sm font-mono bg-gray-800 pt-[19px] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 p-4 pl-8 resize-none"
+      placeholder="// Write your JavaScript code here..."
+      style="border: none; overflow: hidden; line-height: 1.5;"></textarea>
+  </div>
+
+  <!-- Sticky Output Section -->
+  <div class="sticky bottom-0 bg-gray-900 mt-4">
+    <div class="flex justify-between">
+      <h2 class="text-sm font-semibold text-gray-300">Output:</h2>
+      <span class="text-white" (click)="showOutput=!showOutput">{{ showOutput ? 'Hide' : 'Show' }}</span>
+    </div>
+    <pre 
+      *ngIf="showOutput"
+      class="bg-gray-900 text-gray-100 p-4 rounded-lg border border-gray-700 shadow-inner max-h-48 overflow-auto">
+      {{ logs.length ? logs.join('\n') : 'No logs' }}
+    </pre>
+
+    <!-- Error Display (if any) -->
+    <div *ngIf="error" class="mt-4">
+      <h2 class="text-lg font-semibold text-red-400">Error:</h2>
+      <pre 
+        class="bg-red-800 text-red-200 p-4 rounded-lg border border-red-700 shadow-inner max-h-48 overflow-auto">
+        {{ error }}
+      </pre>
+    </div>
+  </div>
+</div>

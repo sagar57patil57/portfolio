@@ -1,0 +1,25 @@
+/* Back button hover effect */
+button:hover {
+    background-color: #CBD5E0; /* Light gray on hover */
+  }
+  
+  /* Add padding and margin to the back button */
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  /* Adjust folder icons */
+  ul li div {
+    padding: 8px;
+  }
+  
+  /* File explorer grid styling */
+  ul.grid-cols-4 li {
+    transition: transform 0.3s ease;
+  }
+  
+  ul.grid-cols-4 li:hover {
+    transform: scale(1.05);
+  }
+  

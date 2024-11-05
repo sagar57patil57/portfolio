@@ -1,0 +1,23 @@
+<div class="flex">
+  <div class="flex items-start p-5 flex-wrap"
+  [ngClass]="{
+    'flex-col desktop-height': !isMobile,
+    'flex-row': isMobile,
+    'justify-center': isMobile    
+  }"
+>
+    <div *ngFor="let item of items" class="mb-5 text-center w-24" [ngClass]="{'mr-8': !isMobile}">
+      <div (click)="onItemClicked(item)">
+        <app-widget [imgSrc]="item.imgSrc" [name]="item.name"></app-widget>
+        <!-- <app-modal [modalId]="item.id" title="File Explorer">
+          <div class="flex">
+            <p>from</p>
+            <p>container,d.</p>
+          </div>
+        </app-modal> -->
+      </div>
+    </div>
+  </div>
+  <!-- ///////////////// -->
+  
+</div>
